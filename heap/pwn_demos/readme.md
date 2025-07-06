@@ -178,8 +178,8 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 	> allocate chunk into stack leveraging large bin skip list...
 
 - **Largebin attack**
-	- link
-	> abc
+	- [docs](/heap/pwn_demos/largebin/largebin_attack/readme.md)
+	> write a heap address to arbitrary memory location...
 
 </p>
 </details>
