@@ -3,6 +3,17 @@ Heap related (update later)
 ### Write-ups index
 
 <details>
+<summary><strong>libc 2.35</strong></summary>
+<p>
+
+- **picoCTF 2024** --> high frequency troubles
+	- [write-up](/challs/picoctf/high_frequency_troubles/readme.md)
+	> obiviously heap overflow but no `free` function, do a trick to free `top_chunk`, abusing overflow primitives to control `tcache_per_thread` in TLS...
+
+</p>
+</details>
+
+<details>
 <summary><strong>libc 2.34</strong></summary>
 <p>
 
