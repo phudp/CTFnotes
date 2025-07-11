@@ -1,8 +1,6 @@
-Folder for binary files and their write-up (updated later)
+write-updescription (updated later)
 
-## Write-ups index
-
-### non-heap related
+## non-heap related
 
 <details>
 <summary><strong>ROP (or buffer overflow style)</strong></summary>
@@ -19,7 +17,18 @@ Folder for binary files and their write-up (updated later)
 </p>
 </details>
 
-### Heap / FSOP related
+## Heap / FSOP related
+
+<details>
+<summary><strong>libc 2.38</strong></summary>
+<p>
+
+- **GlacierCTF 2023** -> write byte where
+	- [write-up](/challs/glacierctf/write_byte_where/readme.md)
+	> one byte arbitrary write, expand stdin buffer, then perform fsop... 
+
+</p>
+</details>
 
 <details>
 <summary><strong>libc 2.35</strong></summary>
