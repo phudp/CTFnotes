@@ -2,7 +2,7 @@
 
 > First time reading this i feel like i faced with over-whelming talent, i witnessed god, i feel god's existence.
 
-**This is probally [kmidas's blog](https://lkmidas.github.io/posts/20210103-heap-seccomp-rop/), I do not try by any means to get credit of the docs, all credits go to him. Since this blog is very useful and its prerequisite for my other post, i will COPY and put it in this note (for easier to watching). REPEAT: ALL CREDITS GO TO [LKMIDAS](https://github.com/lkmidas)**.
+**This is probally [lkmidas's blog](https://lkmidas.github.io/posts/20210103-heap-seccomp-rop/), I do not try by any means to get credit of the docs, all credits go to him. Since this blog is very useful and its prerequisite for my other post, i will COPY and put it in this note (for easier to watching). REPEAT: ALL CREDITS GO TO [LKMIDAS](https://github.com/lkmidas)**.
 
 <details>
 <summary><strong>Introduction</strong></summary>

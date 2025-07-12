@@ -28,9 +28,9 @@ Leverage heap's bugs/primitives to get code execution.
 <summary><strong>Uncategorized (but worth reading)</strong></summary>
 <p>
 
-- **lkmidas's glibc 2.31 heap seccomp exploitation using ROP**
-	- [docs](/heap/pwn_demos/uncategorized/lkmidas_heap_seccomp/readme.md)
-	> abc
+- **Heap seccomp exploitation**
+	- [lkmidas's glibc 2.31 heap seccomp exploitation using ROP](/heap/pwn_demos/uncategorized/heap_seccomp/readme.md)
+	- [for higer glibc verisons using ROP + ???](/heap/pwn_demos/uncategorized/heap_seccomp/readme01.md)
 
 </p>
 </details>
