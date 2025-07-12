@@ -9,19 +9,19 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Foward consolidation**
-	- [docs](malloc/foward_consolidation/readme.md)
+	- [docs](/heap/primitives/malloc/foward_consolidation/readme.md)
 	> using forward consolidation to get overlapping memory...
 
 - **Backward consolidation**
-	- [docs](malloc/backward_consolidation/readme.md)
+	- [docs](/heap/primitives/malloc/backward_consolidation/readme.md)
 	> using back consolidation to reallocate a chunk that wasn't freed...
 
 - **Overlapping consolidation**
-	- [docs](malloc/overlapping_consolidation/readme.md)
+	- [docs](/heap/primitives/malloc/overlapping_consolidation/readme.md)
 	> using consolidation to reallocate a chunk that wasn't freed...
 
 - **Top consolidation**
-	- [docs](malloc/top_consolidation/readme.md)
+	- [docs](/heap/primitives/malloc/top_consolidation/readme.md)
 	> using top chunk consolidation to reallocate a chunk that wasn't freed...
 
 - **Overlapping mmap**
@@ -49,7 +49,7 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Tcache poisoning**
-	- [docs](tcache/tcache_poisoning/readme.md)
+	- [docs](/heap/primitives/tcache/tcache_poisoning/readme.md)
 	> poisoning next ptr of tcache bin to get arbitrary allocate...
 
 </p>
@@ -60,15 +60,15 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Tcache key double**
-	- [docs](tcache/tcache_key_double/readme.md)
+	- [docs](/heap/primitives/tcache/tcache_key_double/readme.md)
 	> successful tcache double free via modify tcache chunk's key...
 
 - **Tcache fastbin double**
-	- [docs](tcache/tcache_fastbin_double/readme.md)
+	- [docs](/heap/primitives/tcache/tcache_fastbin_double/readme.md)
 	> successful tcache double free between tcache/fastbin...
 
 - **Tcache size double**
-	- [docs](tcache/tcache_size_double/readme.md)
+	- [docs](/heap/primitives/tcache/tcache_size_double/readme.md)
 	> successful tcache double free between different size...
 
 </p>
@@ -79,7 +79,7 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Tcache fake chunk**
-	- [docs](tcache/tcache_fake_chunk/readme.md)
+	- [docs](/heap/primitives/tcache/tcache_fake_chunk/readme.md)
 	> inserting a fake chunk with free into the tcache...
 
 </p>
@@ -92,7 +92,7 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Fastbin poisoning**
-	- [docs](fastbin/fastbin_poisoning/readme.md)
+	- [docs](/heap/primitives/fastbin/fastbin_poisoning/readme.md)
 	> poisoning next ptr of fastbin to get arbitrary allocate...
 
 </p>
@@ -103,7 +103,7 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Fastbin double**
-	- [docs](fastbin/fastbin_double/readme.md)
+	- [docs](/heap/primitives/fastbin/fastbin_double/readme.md)
 	> successful fastbin double free...
 
 </p>
@@ -127,11 +127,11 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Unsortedbin exact fit**
-	- [docs](unsortedbin/unsortedbin_exact_fit/readme.md)
+	- [docs](/heap/primitives/unsortedbin/unsortedbin_exact_fit/readme.md)
 	> allocate overlapping chunks via exact fit mechanism...
 
 - **Unsortedbin last remainder**
-	- [docs](unsortedbin/unsortedbin_last_remainder/readme.md)
+	- [docs](/heap/primitives/unsortedbin/unsortedbin_last_remainder/readme.md)
 	> reallocate allocated chunks without freeing, via leveraging the last_remainder...
 
 </p>
@@ -142,7 +142,7 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Unsortedbin poisoning**
-	- [docs](unsortedbin/unsortedbin_poisoning/readme.md)
+	- [docs](/heap/primitives/unsortedbin/unsortedbin_poisoning/readme.md)
 	> allocate chunk into stack leveraging unsortedbin linked list...
 
 - **Unsortedbin attack (?)**
@@ -170,15 +170,15 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Largebin linked poisoning**
-	- [docs](largebin/largebin_linked_poisoning/readme.md)
+	- [docs](/heap/primitives/largebin/largebin_linked_poisoning/readme.md)
 	> allocate chunk into stack leveraging large bin linked list...
 
 - **Largebin skip poisoning**
-	- [docs](largebin/largebin_skip_poisoning/readme.md)
+	- [docs](/heap/primitives/largebin/largebin_skip_poisoning/readme.md)
 	> allocate chunk into stack leveraging large bin skip list...
 
 - **Largebin attack**
-	- [docs](largebin/largebin_attack/readme.md)
+	- [docs](/heap/primitives/largebin/largebin_attack/readme.md)
 	> write a heap address to arbitrary memory location...
 
 </p>
@@ -191,7 +191,7 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Smallbin poisoning**
-	- [docs](smallbin/smallbin_poisoning/readme.md)
+	- [docs](/heap/primitives/smallbin/smallbin_poisoning/readme.md)
 	> allocate chunk into the stack leveraging small bin linked list...
 
 </p>

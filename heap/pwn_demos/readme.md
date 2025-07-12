@@ -2,14 +2,12 @@
 
 Leverage heap's bugs/primitives to get code execution.
 
-### Remote code execution
-
 <details>
-<summary><strong>Targetting</strong></summary>
+<summary><strong>RCE targets</strong></summary>
 <p>
 
 - **libc GOT entries**
-	- [docs](../pwn_demos/targetting/got_libc/readme.md)
+	- [docs](/heap/pwn_demos/rce_targets/got_libc/readme.md)
 	> similar to GOT overwrite...
 
 </p>
@@ -20,9 +18,19 @@ Leverage heap's bugs/primitives to get code execution.
 <p>
 
 - **House of botcake**
-	- [docs](../pwn_demos/houses/house_of_botcake/readme.md)
+	- [docs](heap/pwn_demos/houses/house_of_botcake/readme.md)
 	> **double free primitive**, bypass tcache dbf's key check, making overlapping chunk, return arbitrary allocation...
 
 </p>
 </details>
 
+<details>
+<summary><strong>Uncategorized (but worth reading)</strong></summary>
+<p>
+
+- **lkmidas's glibc 2.31 heap seccomp exploitation**
+	- [docs](/heap/pwn_demos/uncategorized/lkmidas_heap_seccomp/readme.md)
+	> abc
+
+</p>
+</details>
