@@ -93,8 +93,8 @@ We prepare a fake file structure in the heap region, easily understand and perfo
 
 To `exit()` reach to `_IO_OVERFLOW(fp, EOF)`, our (fake) file structure need some conditions:
 
-- `fp->_mode <= 0
-- `fp->_IO_write_ptr > fp->_IO_write_base
+- `fp->_mode <= 0`
+- `fp->_IO_write_ptr > fp->_IO_write_base`
 
 After bypass, we need to hijacking the `vtable`, then perform some fsop rce (which have their own conditions)...
 
