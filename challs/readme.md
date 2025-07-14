@@ -14,6 +14,10 @@ write-updescription (updated later)
 	- [write-up](/challs/umdctf/prison_realm/readme.md)
 	> no leak functions, use stack pivot + add_gadget -> attack GOT to create custom rop gadget...
 
+- **PWNABLE.TW** --> de aslr
+	- [write-up](/challs/pwnabletw/deaslr/readme.md)
+	> no leak functions, no add_gadget, use stack pivot + csu gadgets to re(ab)use the left over libc pointer...
+
 </p>
 </details>
 
