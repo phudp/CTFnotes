@@ -25,6 +25,17 @@ write-updescription (updated later)
 </p>
 </details>
 
+<details>
+<summary><strong>Shellcode collection (that's outclassed me)</strong></summary>
+<p>
+
+- **angstromCTF 2022** --> parity
+	- [NOT a write-up](/challs/angstromctf/parity/readme.md)
+	> odd/even byte shellcode depend on current position... (bonus tips)
+
+</p>
+</details>
+
 ## Heap / FSOP related
 
 <details>
