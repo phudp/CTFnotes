@@ -18,6 +18,10 @@ write-updescription (updated later)
 	- [write-up](/challs/pwnabletw/deaslr/readme.md)
 	> no leak functions, no add_gadget, use stack pivot + csu gadgets to re(ab)use the left over libc pointer...
 
+- **MetaCTF 2021** --> an attemp was made
+	- [write-up](/challs/metactf/an_attempt_was_made/readme.md)
+	> seccomp and few gadgets, use add_gadget -> attack GOT to create some custom gadget then calling mprotect to make bss executable...
+
 </p>
 </details>
 
