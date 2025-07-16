@@ -30,7 +30,7 @@ write-updescription (updated later)
 <p>
 
 - **angstromCTF 2022** --> parity
-	- [NOT a write-up](/challs/angstromctf/parity/readme.md)
+	- [write-up](/challs/angstromctf/parity/readme.md)
 	> odd/even byte shellcode depend on current position... (bonus tips)
 
 </p>
