@@ -33,6 +33,10 @@ write-updescription (updated later)
 	- [write-up](/challs/angstromctf/parity/readme.md)
 	> odd/even byte shellcode depend on current position... (bonus tips)
 
+- **UIUCTF 2024** --> syscalls
+	- [write-up](/challs/uiuctf/syscalls/readme.md)
+	> seccomp restricted syscall... (bonus tips)
+
 </p>
 </details>
 
