@@ -1,4 +1,4 @@
-write-updescription (updated later)
+write-up description (updated later)
 
 ## non-heap related
 
@@ -35,7 +35,11 @@ write-updescription (updated later)
 
 - **UIUCTF 2024** --> syscalls
 	- [write-up](/challs/uiuctf/syscalls/readme.md)
-	> seccomp restricted syscall... (bonus tips)
+	> seccomp restricted some common syscalls... (bonus tips)
+
+- **NahamCon CTF 2022** --> stackless
+	- [write-up](/challs/nahamconctf/stackless/readme.md)
+	> clear all registers before execute shellcode... (bonus tips)
 
 </p>
 </details>
