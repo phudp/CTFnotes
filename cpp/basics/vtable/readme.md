@@ -112,3 +112,7 @@ call *vfptr // call shellcode(meh)
 ```
 
 You already familiar with this from FSOP!
+
+## For fun?
+
+https://codelearn.io/sharing/10-tu-khoa-trong-cpp-oop
