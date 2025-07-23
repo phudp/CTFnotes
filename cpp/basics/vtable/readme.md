@@ -49,14 +49,14 @@ compiler generates the table for all the class in read-only section
 
 > vtable of child class Stu will inherit `phd()` from class Person
 
-`new` function depends on `malloc` so `ddaa` and `meh` will exist in heap - writeable section
+`new` function depends on `malloc` so `ddaa` and `meh` will exist in heap - writeble section
 
 > and somehow the first QWORDs of class's structs always are the vtable... ?
 > ![](pics/img01.png)
 
 `vfptr` is short word of "Virtual Function Pointer"
 
-> `vfptr` is **WRITEABLE**
+> `vfptr` is **WRITABLE**
 
 ### Calling funtions
 
