@@ -4,7 +4,7 @@ is a dynamic array, **allocated in heap** segment. More flexible than arrays in 
 
 > When there isn’t enough space, create `new` vector with **double the size**, and the old space is returned to the system.
 
-### vector's member
+## vector's member
 
 - `_M_start` : vector's start position
 > `vector::begin()`
@@ -18,7 +18,7 @@ is a dynamic array, **allocated in heap** segment. More flexible than arrays in 
 
 ![](pics/img00.png)
 
-### vector's member function
+## vector's member function
 
 - `.push_back()` : add new element into the end of the vector
 
@@ -30,7 +30,7 @@ is a dynamic array, **allocated in heap** segment. More flexible than arrays in 
 
 - [more...](https://cplusplus.com/reference/vector/vector/)
 
-### Demo (vector's layout and behaviour)
+## Demo (vector's layout and behaviour)
 
 C++ source code:
 
