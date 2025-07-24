@@ -16,12 +16,12 @@ Therefore, you should **avoid mixing** `malloc`/`free` with `new`/`delete`, or i
 
 The general flow of `new`:
 - `operator new`:
-	- similar to `malloc`, it simply allocates memory. But if allocation fails, it throws an exception, whereas `malloc` returns null.
+	- Similar to `malloc`, it simply allocates memory. But if allocation fails, it throws an exception, whereas `malloc` returns null.
 	- So `operator new` is like a wrapper over `malloc`
-- constructor
+- **constructor**
 
 The general flow of `delete`:
-- destructor
+- **destructor**
 - `operator delete`:
 	- Similar to `free`, it deallocates memory. It's like a wrapper over `free`
 
