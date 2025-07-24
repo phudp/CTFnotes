@@ -9,4 +9,5 @@ some basics of cpp
 - [new and delete](/cpp/basics/new_delete/readme.md)
 > wrapper of `malloc` and `free`...
 
-- 
+- [copy constructor and assignment operator](/cpp/basics/copy_assignment/readme.md)
+> `a = b` ...?
