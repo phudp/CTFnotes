@@ -181,7 +181,7 @@ Take a look back at my gdb, at offset `0x28` from `*gs` is gadget `add rdi, 0
 <summary><strong>Attention</strong></summary>
 <p>
 
-Also one thing to note, we need to padding the `__pad5` of `stdout` to write section, or else the exploit won't work.
+Also one thing to note, we need to padding the `__pad5` of `stdout` to **exactly [stdout + 0x20]**, or else the exploit won't work.
 
 </p>
 </details>
