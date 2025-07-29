@@ -93,3 +93,16 @@ write-up description (updated later)
 
 </p>
 </details>
+
+## C++ related
+
+<details>
+<summary><strong>Uncategorized</strong></summary>
+<p>
+
+- **GlacierCTF 2023** --> glacier rating
+	- [write-up](/challs/glacierctf/glacier_rating/readme.md)
+	> C++ heap style, uninitialized pointer when delete note leads to doube free...
+
+</p>
+</details>
