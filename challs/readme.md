@@ -47,6 +47,17 @@ write-up description (updated later)
 ## Heap / FSOP related
 
 <details>
+<summary><strong>libc 2.39</strong></summary>
+<p>
+
+- **PwnMe CTF Quals 2025 ** --> compress
+	- [write-up](/challs/pwnmectf/compress/readme.md)
+	> off by one leads to mismatch pointer, control chunks's metadata, perform unsortedbin poisoning to allocate into stack...
+
+</p>
+</details>
+
+<details>
 <summary><strong>libc 2.38</strong></summary>
 <p>
 
