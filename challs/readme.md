@@ -50,7 +50,7 @@ write-up description (updated later)
 <summary><strong>libc 2.39</strong></summary>
 <p>
 
-- **PwnMe CTF Quals 2025 ** --> compress
+- **PwnMe CTF Quals 2025** --> compress
 	- [write-up](/challs/pwnmectf/compress/readme.md)
 	> off by one leads to mismatch pointer, control chunks's metadata, perform unsortedbin poisoning to allocate into stack...
 
