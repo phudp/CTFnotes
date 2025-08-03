@@ -157,8 +157,8 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Unsortedbin fake chunk**
-	- link
-	> abc
+	- [docs](/heap/primitives/unsortedbin/unsortedbin_fake_chunk/readme.md)
+	> inserting a fake chunk with free into the unsortedbin...
 
 </p>
 </details>
