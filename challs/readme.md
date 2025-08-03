@@ -54,6 +54,10 @@ write-up description (updated later)
 	- [write-up](/challs/pwnmectf/compress/readme.md)
 	> off by one leads to mismatch pointer, control chunks's metadata, perform unsortedbin poisoning to allocate into stack...
 
+- **justCTF 2025** --> baby heap
+	- [write-up](/challs/justctf/baby_heap/readme.md)
+	> obivious UAF (chunks `0x40` only), tcache poisoning to create fake unsortedbin to leak libc, then leak `__environ` and rop...
+
 </p>
 </details>
 
