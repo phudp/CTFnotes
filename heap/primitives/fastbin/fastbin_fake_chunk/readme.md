@@ -39,7 +39,7 @@ int main()
     printf("target ptr: %p\n", ptr);
 
     // prepare few things
-    ptr[-1] = 0x81; // fake chunk size (unsortedbin range) (or bigger than fastbin when tcache is fill) (prev_inuse on to prevent backward consolidation)
+    ptr[-1] = 0x81; // fake chunk size (fastbin range) (when tcache is fill) (prev_inuse on to prevent error)
 
     ptr[0x70/8 + 1] = 0x20; // fake next adjacent chunk's size (bypass the fencepost size check (>= 0x20), prev_inuse doesnt matter i guess)    
 
