@@ -19,7 +19,7 @@ this is usually exist when we need a libc leak, so we edit some chunk header in 
 #include <stdio.h>
 #include <stdlib.h>
 
-char x[0x600];
+char x[0x600]; // fake unsortedbin must below the heap bound
 
 int main()
 {
