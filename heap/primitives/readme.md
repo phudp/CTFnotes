@@ -114,8 +114,8 @@ Various "pure (heap's) primitives" we can (ab)use for futher exploitation.
 <p>
 
 - **Fastbin fake chunk**
-	- link
-	> abc
+	- [docs](/heap/primitives/fastbin/fastbin_fake_chunk/readme.md)
+	> inserting a fake chunk with free into the fastbin...
 
 </p>
 </details>
