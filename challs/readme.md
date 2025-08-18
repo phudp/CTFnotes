@@ -58,6 +58,10 @@ write-up description (updated later)
 	- [write-up](/challs/justctf/baby_heap/readme.md)
 	> obivious UAF (chunks `0x40` only), tcache poisoning to create fake unsortedbin to leak libc, then leak `__environ` and rop...
 
+- **SekaiCTF 2025** --> speedpwn2
+	- [todo-write-up](/challs/sekaictf/speedpwn2/readme.md)
+	> out of bound in heap via indexing, no pie + partial relro -> attack `tcache_per_thread` to arbitary allocate -> attack GOT...
+
 </p>
 </details>
 
@@ -118,6 +122,10 @@ write-up description (updated later)
 - **GlacierCTF 2023** --> glacier rating
 	- [write-up](/challs/glacierctf/glacier_rating/readme.md)
 	> C++ heap style, uninitialized pointer when delete note leads to doube free...
+
+- **SekaiCTF 2025** --> learning oop
+	- [todo-write-up](/challs/sekaictf/learning_oop/readme.md)
+	> heap overflow via `cin` function, tcache poisoning around heap to get `pie` and `libc` leak, then rce...
 
 </p>
 </details>
