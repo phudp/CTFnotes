@@ -18,7 +18,7 @@ Leverage heap's bugs/primitives to get code execution.
 <p>
 
 - **House of botcake**
-	- [docs](heap/pwn_demos/houses/house_of_botcake/readme.md)
+	- [docs](/heap/pwn_demos/houses/house_of_botcake/readme.md)
 	> **double free primitive**, bypass tcache dbf's key check, making overlapping chunk, return arbitrary allocation...
 
 </p>
