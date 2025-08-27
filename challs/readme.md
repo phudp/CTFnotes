@@ -84,6 +84,10 @@ write-up description (updated later)
 	- [write-up](/challs/picoctf/high_frequency_troubles/readme.md)
 	> obiviously heap overflow but no `free` function, do a trick to free `top_chunk`, abusing overflow primitives to control `tcache_per_thread` in TLS...
 
+- **Dreamhack wargame** --> fnotes
+	- [todo-write-up](/challs/dreamhack/fnotes/readme.md)
+	> abuse closed file structure leads to UAF and DBF, heap fengshui then perform FSOP...
+
 </p>
 </details>
 
