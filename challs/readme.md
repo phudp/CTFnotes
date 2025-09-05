@@ -77,6 +77,17 @@ write-up description (updated later)
 </details>
 
 <details>
+<summary><strong>libc 2.36</strong></summary>
+<p>
+
+- **unknown** --> glibc master
+	- [write-up](/challs/unknown/glibc_master/readme.md)
+	> one time usage `off-by-one`, super duper heap fengshui to make chunks overlapping via backward consolidation, then perform largebin attack...
+
+</p>
+</details>
+
+<details>
 <summary><strong>libc 2.35</strong></summary>
 <p>
 

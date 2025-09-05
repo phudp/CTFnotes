@@ -1,0 +1,11 @@
+poison_null_byte: https://github.com/shellphish/how2heap/blob/master/glibc_2.35/poison_null_byte.c
+large_bin_attack: https://github.com/shellphish/how2heap/blob/master/glibc_2.35/large_bin_attack.c
+
+** Here is the intended solution. You are encouraged to come up with your own unique solution **
+
+First of all, use poison_null_byte to get chunk overlap. 
+Then use large_bin_attack to achieve arbitrary write capability (to a heap address).
+Overwrite tcache pointer and get an arbitrary write of large size.
+Overwrite the GOT in libc to get RIP hijack.
+Good Luck! 
+

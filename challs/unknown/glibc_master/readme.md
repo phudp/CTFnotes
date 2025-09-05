@@ -1,0 +1,23 @@
+i found this chall randomly when surfing the internet, from [chinese blog](https://fengf3ng.github.io/posts/%E9%AB%98%E7%BA%A7%E7%BD%91%E7%BB%9C%E6%94%BB%E9%98%B2%E6%BC%8F%E6%B4%9E%E5%88%A9%E7%94%A8/#glibc_master) and take a try on it...
+
+since its too long to write a full detail write up, i will comment some useful things here, hoping it will help (im lazy LOL)...
+
+the binary is heap style note chall and there is 1 time useage off by one (you can navigate the file by yourself). The idea is making overlapping chunk, then we can perform some largebin attack...
+
+first is making overlapping chunk, i use off by one to create the backward consolidation primitive (see the heap folder to understand more)...
+
+the problem is here, we dont have heap leak, so to avoid doubly linked list corruption, we need to fengshui heap layout (super duper fengshui).
+
+abuse the fact that when 2 chunk consolidation to each other (to bigger chunk), example chunk A conso back to chunk B, the link list pointer in chunk B wont be deleted. so there will be left over double link list pointer in heap region
+
+also when the chunk is relocated from unsortedbin, the pointer is also not deleted. In this chall, we able to modifed it by `read()`, thats mean we can partial overwrite last byte of pointer so that we can create a fake chunk head which can bypass doubly linked list check and able to consolidate backward to.
+
+> yeah a lot of fengshui here (that the main point of problems)...
+
+second, after we have overlapping chunk, its easy to perform largebin attack (we have free libc leak from the chall)
+
+the original blog attack the `mp.` in glibc, i attack the tcache pointer in TLS. Remember they are different...
+
+the techniques aim for tcache in TLS has been described in picoctf high frequency chall. For the `mp` you can read from [this blog](https://4xura.com/binex/pwn-mp_-exploiting-malloc_par-to-gain-tcache-bin-control/)
+
+Since i use tcache TLS, the offset maybe different when using different environtment (this is side effect of TLS and libc mapping), so debug with docker to have the greatest stable...
