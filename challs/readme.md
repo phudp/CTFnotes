@@ -47,6 +47,17 @@ write-up description (updated later)
 ## Heap / FSOP related
 
 <details>
+<summary><strong>libc 2.41</strong></summary>
+<p>
+
+- **Securinets CTF Quals 2025** --> v_tables
+	- [write-up](/challs/securinetsctf/v_tables/readme.md)
+	> `fsop` but `vtable` is unreachable, 2 solution...
+
+</p>
+</details>
+
+<details>
 <summary><strong>libc 2.39</strong></summary>
 <p>
 

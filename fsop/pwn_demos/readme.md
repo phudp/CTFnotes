@@ -8,3 +8,6 @@ some interesting pwn processes related to FSOP
 
 - [overwrite `_IO_list_all`](/fsop/pwn_demos/io_list_all/readme.md)
 > abusing `_IO_list_all` in high glibc versions...
+
+- [specific case: `vtables` is unreachable](/challs/securinetsctf/v_tables/readme.md)
+> `fsop` rce when we can not overwrite file struct `vtables`...
